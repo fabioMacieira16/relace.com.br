@@ -1,0 +1,15 @@
+{
+  "name": "relace.com.br",
+  "version": "1.0.0",
+  "description": "landpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fabio.macieira",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "livereload": "^0.9.3"
+  }
+}
