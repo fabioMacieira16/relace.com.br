@@ -4,12 +4,12 @@ body {
 }
 
 a {
-  color: rgba(40, 167, 69, 0.93);;
+  color: #f1f7fd;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgba(40, 167, 69, 0.93);;
+  color: #f1f7fd;
   text-decoration: none;
 }
 
@@ -20,8 +20,12 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  color: #f1f7fd;
 }
 
+p {
+  color:  #f1f7fd;
+}	
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -41,7 +45,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid rgba(40, 167, 69, 0.93);;
+  border: 6px solid rgba(40, 167, 69, 0.93);
   border-top-color: #d1e6f9;
   border-radius: 50%;
   width: 60px;
@@ -129,7 +133,7 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: rgba(40, 167, 69, 0.93);;
+  color: rgba(40, 167, 69, 0.93);
 }
 
 #topbar .contact-info i {
@@ -242,7 +246,7 @@ h6 {
   position: relative;
 }
 
-.navbar>ul>li {
+.navbar > ul > li {
   position: relative;
   white-space: nowrap;
   padding: 8px 0 8px 20px;
@@ -271,7 +275,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: rgba(40, 167, 69, 0.93);
   border-color: rgba(40, 167, 69, 0.93);
 }
@@ -310,11 +314,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: rgba(40, 167, 69, 0.93);
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -326,7 +330,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -338,7 +342,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -400,7 +404,7 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar-mobile>ul>li {
+.navbar-mobile > ul > li {
   padding: 0;
 }
 
@@ -414,7 +418,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: rgba(40, 167, 69, 0.93);
 }
 
@@ -449,11 +453,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: rgba(40, 167, 69, 0.93);
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -543,7 +547,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {  
+section {
   overflow: hidden;
 }
 
@@ -628,11 +632,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -794,7 +798,10 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(rgba(40, 167, 69, 0.93) 50%, rgba(25, 119, 204, 0.4) 52%);
+  background: radial-gradient(
+    rgba(40, 167, 69, 0.93) 50%,
+    rgba(25, 119, 204, 0.4) 52%
+  );
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -1014,8 +1021,6 @@ section {
   color: #fff;
 }
 
-
-
 /*--------------------------------------------------------------
 # Departments
 --------------------------------------------------------------*/
@@ -1170,7 +1175,7 @@ section {
   background: rgba(40, 167, 69, 0.93);
 }
 
-.doctors .member .social a+a {
+.doctors .member .social a + a {
   margin-left: 8px;
 }
 
@@ -1186,7 +1191,7 @@ section {
   list-style: none;
 }
 
-.faq .faq-list li+li {
+.faq .faq-list li + li {
   margin-top: 15px;
 }
 
@@ -1445,7 +1450,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1493,7 +1498,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: rgba(40, 167, 69, 0.93);
   border: 0;
   padding: 10px 35px;
@@ -1502,7 +1507,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: rgba(4, 170, 43, 0.93);
 }
 
@@ -1526,28 +1531,28 @@ section {
   }
 }
 
-.container-footer{  
-  padding-left: 7rem!important;
-  padding-right: 7rem!important;
+.container-footer {
+  padding-left: 7rem !important;
+  padding-right: 7rem !important;
+  background-color: #b95eff;
 }
 
-
 #botao {
-box-sizing: border-box;
-text-decoration: none;
-display: block!important;
-width: 100%!important;
-padding-right: 1.5rem!important;
-padding-left: 1.5rem!important;
-text-align: center!important;
-color: rgba(var(--bs-light-rgb),var(--bs-text-opacity))!important;
-font-family: 'Poppins', sans-serif;
-box-shadow: 1px 2px 4px rgb(0 0 0 / 27%)!important;
-font-weight: 600!important;
-padding-bottom: .8rem!important;
-padding-top: .8rem!important;
-font-size: 14px!important;
-text-shadow: 2px 2px rgba(0, 0, 0, .2);
-background: rgba(75, 172, 56, .15)!important;
-border: 2px solid #4bac38;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: block !important;
+  width: 100% !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  text-align: center !important;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 27%) !important;
+  font-weight: 600 !important;
+  padding-bottom: 0.8rem !important;
+  padding-top: 0.8rem !important;
+  font-size: 14px !important;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  background: rgba(75, 172, 56, 0.15) !important;
+  border: 2px solid #4bac38;
 }
