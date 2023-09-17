@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #444444;
 }
 
@@ -19,13 +19,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
   color: #f1f7fd;
 }
 
-p {
-  color:  #f1f7fd;
-}	
+
+#contato-instagram {
+  color: #f1f7fd;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -84,7 +85,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgba(40, 167, 69, 0.93);
+  background: rgba(185, 94, 255, 1);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -98,7 +99,6 @@ p {
 }
 
 .back-to-top:hover {
-  background: rgba(40, 167, 69, 0.93);
   color: #fff;
 }
 
@@ -186,7 +186,6 @@ p {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
 }
 
 #header .logo a {
@@ -492,7 +491,6 @@ p {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -556,6 +554,7 @@ section {
 }
 
 .section-title {
+  padding-top: 120px;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -566,29 +565,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #2c4964;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: rgba(40, 167, 69, 0.93);
-  bottom: 0;
-  left: calc(50% - 20px);
+  color: #070707;
 }
 
 .section-title p {
@@ -754,13 +731,13 @@ section {
 }
 
 .about .icon-box .icon i {
-  color: rgba(40, 167, 69, 0.93);
+  color: red;
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: rgba(40, 167, 69, 0.93);
-  border-color: rgba(40, 167, 69, 0.93);
+  background: red;
+  border-color: orchid;
 }
 
 .about .icon-box:hover .icon i {
@@ -780,7 +757,8 @@ section {
 }
 
 .about .icon-box .title a:hover {
-  color: rgba(40, 167, 69, 0.93);
+  color: red;
+
 }
 
 .about .icon-box .description {
@@ -799,7 +777,7 @@ section {
   width: 94px;
   height: 94px;
   background: radial-gradient(
-    rgba(40, 167, 69, 0.93) 50%,
+    rgba(167, 40, 57, 0.93) 50%,
     rgba(25, 119, 204, 0.4) 52%
   );
   border-radius: 50%;
@@ -937,89 +915,134 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-color: #eddefa;
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebe9e9;
-  padding: 80px 20px;
+  padding: 28px 10px 10px 10px;
   transition: all ease-in-out 0.3s;
-}
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: rgba(40, 167, 69, 0.93);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 28px;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: "";
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: #badaf7;
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.services .icon-box h4 a {
-  color: #2c4964;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .services .icon-box:hover {
-  background: rgba(40, 167, 69, 0.93);
-  border-color: rgba(40, 167, 69, 0.93);
+  background: #bc63ff;
+  border-color: #bc63ff;
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
+section {
+  text-align: center; /* Centraliza os cartões horizontalmente */
 }
 
-.services .icon-box:hover .icon i {
-  color: rgba(40, 167, 69, 0.93);
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block; /* Coloca os cartões lado a lado */
+  vertical-align: top; /* Alinha os cartões pela parte superior */
+  box-sizing: border-box; 
 }
 
-.services .icon-box:hover .icon::before {
-  background: rgba(4, 170, 43, 0.93);
+.card:hover {
+  background-color: #bc63ff;
+  color: #f0f0f0;
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
-  color: #fff;
+.title {
+  color: #0086d0;
+  margin-bottom: 30px;
 }
+
+.description {
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.price {
+  color: #0086d0;
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+
+.sepador {
+  padding-bottom: 10px;
+}
+
+/* hover dos cards */
+.card:hover .title {
+  color: #fff; /* Cor do título no hover */
+}
+
+.card:hover .description {
+  color: #fff; /* Cor da descrição no hover */
+}
+
+.card:hover .price {
+  color: #fff; /* Cor do preço no hover */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  text-align: left;
+}
+
+.check {
+  background-color: #eff2fe;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check i {
+  color: #008000;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 20px;
+  background: #0086d0;
+  color: #FFF;
+  text-decoration: none;
+  width: 100%;
+  font-weight: 500;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: none;
+  line-height: 1;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.card:hover .button {
+  background: #fff; /* Cor da descrição no hover */
+  color: #bc63ff;
+}
+
 
 /*--------------------------------------------------------------
 # Departments
@@ -1205,7 +1228,6 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1531,28 +1553,13 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .container-footer {
   padding-left: 7rem !important;
   padding-right: 7rem !important;
-  background-color: #b95eff;
+  padding-bottom: 15rem !important;;  
+  background: linear-gradient(to right, rgba(185, 94, 255, 1) 0%, rgba(87, 27, 116, 1) 100%) !important;
 }
 
-#botao {
-  box-sizing: border-box;
-  text-decoration: none;
-  display: block !important;
-  width: 100% !important;
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
-  text-align: center !important;
-  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
-  font-family: "Poppins", sans-serif;
-  box-shadow: 1px 2px 4px rgb(0 0 0 / 27%) !important;
-  font-weight: 600 !important;
-  padding-bottom: 0.8rem !important;
-  padding-top: 0.8rem !important;
-  font-size: 14px !important;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  background: rgba(75, 172, 56, 0.15) !important;
-  border: 2px solid #4bac38;
-}
