@@ -578,53 +578,74 @@ section {
 # Recursos
 --------------------------------------------------------------*/
 /* Estilos para os cards e descrição */
+
 .recurso {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card-container {
+.card-section-title {
+  width: 78%;
+  text-align: left;
+  margin: 0 auto; 
+}
+
+.card-section-title h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #590e89;
+  font-weight: bold;
+}
+
+.card-row {
   display: flex;
-  justify-content: left; /* Centraliza horizontalmente os cards */
-  gap: 20px; /* Adiciona espaçamento entre os cards */
+  justify-content: center;
+  gap: 5px;
 }
 
 .card-recurso {
-  width: 600px; /* Largura do card, você pode ajustar conforme necessário */
-  height: 400px; /* Altura do card, você pode ajustar conforme necessário */
-  background-color: #f7f7f7; /* Cor de fundo cinza */
-  margin: 5px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 50px;
+  width: calc(40% - 10px);
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .card-recurso-interno {
-  height: 330px; /* Altura do card, você pode ajustar conforme necessário */
-  background-color: #e9e9e9; /* Cor de fundo cinza */
-  margin: 5px;
-  padding: 15px;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+  border-radius: 10px;
 }
 
-/* card da image */
-.card-recurso img {
-  margin-top: 40px;
-  width: 70%;
-  height: auto;
+.card-recurso img:first-child {
+  max-width: 90%;
+  height: auto; /* Defina a altura desejada para as imagens */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.special-card {
+  background-color: #f7f7f7;
 }
 
 .card-recurso h1 {
-  margin-top:  20px;
-  font-size: 24px; /* Tamanho do título */
-  color: #070707;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #5e5b5b;  
 }
 
-.card-recurso p {
-  font-size: 16px; /* Tamanho da descrição */
+.card-description p {
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  color: #b5aeae;
 }
-
 
 
 /*--------------------------------------------------------------
