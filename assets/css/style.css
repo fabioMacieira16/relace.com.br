@@ -40,40 +40,6 @@ h6 {
   background: #fff;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid rgba(40, 167, 69, 0.93);
-  border-top-color: #d1e6f9;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -111,61 +77,9 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  background: #fff;
-  height: 40px;
-  font-size: 14px;
-  transition: all 0.5s;
-  z-index: 996;
-}
-
-#topbar.topbar-scrolled {
-  top: -40px;
-}
-
-#topbar .contact-info a {
-  line-height: 1;
-  color: #444444;
-  transition: 0.3s;
-}
-
-#topbar .contact-info a:hover {
-  color: rgba(185, 94, 255, 1);
-}
-
-#topbar .contact-info i {
-  color: rgba(185, 94, 255, 1);
-  padding-right: 4px;
-  margin-left: 15px;
-  line-height: 0;
-}
-
-#topbar .contact-info i:first-child {
-  margin-left: 0;
-}
-
-#topbar .social-links a {
-  color: rgba(185, 94, 255, 1);
-  padding-left: 15px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
-}
-
-#topbar .social-links a:hover {
-  color: rgb(150, 25, 245);
-}
-
-#topbar .social-links a:first-child {
-  border-left: 0;
-}
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+.header {
   background: rgb(150, 25, 245);
   transition: all 0.5s;
   z-index: 997;
@@ -193,33 +107,6 @@ h6 {
 
 #header .logo img {
   max-height: 40px;
-}
-
-/**
-* Appointment Button *
-*/
-.appointment-btn {
-  margin-left: 25px;
-  background: rgba(185, 94, 255, 1);
-  color: #fff;
-  border-radius: 50px;
-  padding: 15px 35px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-}
-
-.appointment-btn:hover {
-  background: rgba(185, 94, 255, 1);
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .appointment-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 18px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -513,65 +400,50 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+# section-icon - Por que escolher
+a Relaci?
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f1f7fd;
-  min-height: 40px;
-  margin-top: 120px;
-}
+/* Estilos para os icones */
 
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 100px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-.breadcrumbs ol {
+.section-icon {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
+  align-items: flex-start;
+  margin-left: 100px;
 }
 
-.breadcrumbs ol li + li {
-  padding-left: 10px;
+.icone-section-title {
+  text-align: left;
+  margin-bottom: 20px; 
 }
 
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
+.icone-section-title h1 {
+  color: #590e89;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
+.icon {
+  text-align: left;
+}
 
-  .breadcrumbs ol {
-    display: block;
-  }
+.icon img {
+  width: 120px;
+  height: 120px;
+}
 
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
+.icon h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #AD63FD;
+}
+
+.icon p {
+  font-size: 16px;
+  color: #999;
+  margin-top: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -645,8 +517,8 @@ section {
   font-size: 22px;
   text-align: center;
   color: #b5aeae;
+  margin-bottom: 3rem;
 }
-
 
 /*--------------------------------------------------------------
 # Counts
@@ -726,13 +598,14 @@ section {
   background-color: #ffffff;
   border-radius: 10px;
   text-align: center;
-  transition: background-color 0.3s, color 0.3s;
   display: inline-block; /* Coloca os cartões lado a lado */
-  vertical-align: top; /* Alinha os cartões pela parte superior */
   box-sizing: border-box;
 }
 
 .card:hover {
+  width: 310px;
+  padding: 25px;
+  margin: 25px;
   background-color: #bc63ff;
   color: #f0f0f0;
 }
