@@ -408,42 +408,49 @@ a Relaci?
 .section-icon {
   display: flex;
   align-items: flex-start;
-  margin-left: 100px;
+  margin-left: 150px; 
 }
 
 .icone-section-title {
+  width: 78%;
   text-align: left;
-  margin-bottom: 20px; 
+  margin: 0 auto; 
 }
 
 .icone-section-title h1 {
   color: #590e89;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .icon {
-  text-align: left;
+  text-align: center;  
 }
 
 .icon img {
-  width: 120px;
-  height: 120px;
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
 }
 
 .icon h2 {
-  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 24px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 5px;
   color: #AD63FD;
 }
 
+.content .icon {
+  margin-right: 140px;
+}
+
 .icon p {
-  font-size: 16px;
+  font-size: 19px;
   color: #999;
   margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -461,6 +468,7 @@ a Relaci?
   width: 78%;
   text-align: left;
   margin: 0 auto; 
+  margin-bottom: 50px;
 }
 
 .card-section-title h1 {
@@ -702,20 +710,15 @@ ul li {
   flex-wrap: wrap;
 }
 
-.col-md-4 {
-  flex: 0 0 calc(33.33% - 5px);
-  margin-right: -90px;
-}
-
 .img-reduzida {
   margin-bottom: 10px;
-  max-width: 60%;
+  max-width: 90%;
   border-radius: 10px;
 }
 
 .img-extendida {
   max-width: 100%; /* Largura da imagem */
-  height: 460px; /* Altura da imagem */
+  height: 510px; /* Altura da imagem */
   width: calc(80% - 80px);
   border-radius: 10px; /* Arredondamento da borda */
   margin-right: 290px; /* Distância entre a imagem e o texto */
