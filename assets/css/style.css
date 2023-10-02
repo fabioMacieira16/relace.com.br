@@ -79,42 +79,161 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header {
-  background: rgb(150, 25, 245);
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 15px 0;
-  top: 40px;
-  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+header {
+  background-image: url("/assets/img/header/sessão.svg");
+  background-size: cover; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 900px; /* Altura fixa para a resolução 1400x600 */
 }
 
-#header.header-scrolled {
-  top: 0;
+.left-column {
+  width: 50%;
+  color: #ffffff;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
 }
 
-#header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+.left-column h1{
+  font-size: 60px; /* Tamanho da fonte do título */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #3e006b;
+  margin: 20px 0;
+  word-break: break-word; /* Quebra a palavra para não ficar fora da tela */
+  text-align: left; /* Centraliza o título horizontalmente */
+  margin-left: 140px;
 }
 
-#header .logo a {
-  color: #2c4964;
+.left-column p {
+  font-size: 20px; /* Tamanho da fonte do subtítulo */
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-align: left; /* Centraliza o subtítulo horizontalmente */
+  margin-left: 140px;
 }
 
-#header .logo img {
-  max-height: 40px;
+.header-icon img {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 240px; /* Tamanho da imagem do ícone */
+  margin-left: -220px;;
 }
+
+
+/* imagem principal que tem o icone da relace*/
+img {
+  width: 50%;
+  margin-left: -90px;
+}
+
+/* elementos da direita */
+
+.right-column {
+  width: 50%;
+  color: #ffffff;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  margin-bottom: 20px;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+.social-media {
+  font-weight: bold;
+}
+
+/*elememto form */
+.header-card {
+  background-color: #0086d0;
+  padding: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  width: 500px;
+  display: inline-block; /* Coloca os cartões lado a lado */
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+
+form h1 {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center; /* Centraliza o título horizontalmente */
+}
+
+form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; /* Centraliza o título horizontalmente */
+  margin-bottom: 35px;
+}
+
+/* elementos do botao e input do header */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0px 20px 0;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #148fd4;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.header-check {
+  color: #000000;
+}
+
+.label-termos{
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 1;
+  text-align: left; /* Alinha o texto do label à direita */
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 80;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #148fd4;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  color: #bc63ff;
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation
-*/
+
 .navbar {
   padding: 0;
 }
@@ -347,10 +466,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
@@ -408,13 +523,13 @@ a Relaci?
 .section-icon {
   display: flex;
   align-items: flex-start;
-  margin-left: 150px; 
+  margin-left: 150px;
 }
 
 .icone-section-title {
   width: 78%;
   text-align: left;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .icone-section-title h1 {
@@ -425,7 +540,7 @@ a Relaci?
 }
 
 .icon {
-  text-align: center;  
+  text-align: center;
 }
 
 .icon img {
@@ -467,7 +582,7 @@ a Relaci?
 .card-section-title {
   width: 78%;
   text-align: left;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -517,7 +632,7 @@ a Relaci?
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 25px;
-  color: #5e5b5b;  
+  color: #5e5b5b;
 }
 
 .card-description p {
