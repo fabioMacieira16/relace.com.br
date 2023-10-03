@@ -123,7 +123,7 @@ header {
 }
 
 /* Imagem principal que tem o ícone da relace */
-img {
+.left-column img {
   width: 50%;
   margin-left: -90px;
 }
@@ -1278,10 +1278,9 @@ ul li {
 }
 
 .icon-footer {
-  width: 40%;
+  width: 20%;
   text-align: left;
   margin-top: 70px;
-  margin-bottom: 50px;
-  margin-left: 90px;
+  margin-bottom: 50px;  
 }
 
