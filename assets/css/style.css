@@ -79,109 +79,110 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/* Estilos para telas maiores */
 header {
   background-image: url("/assets/img/header/sessão.svg");
-  background-size: cover; 
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 900px; /* Altura fixa para a resolução 1400x600 */
+  height: 900px;
+  margin-bottom: 40px;
 }
 
 .left-column {
   width: 50%;
   color: #ffffff;
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
 }
 
-.left-column h1{
-  font-size: 60px; /* Tamanho da fonte do título */
+.left-column h1 {
+  font-size: 60px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #3e006b;
   margin: 20px 0;
-  word-break: break-word; /* Quebra a palavra para não ficar fora da tela */
-  text-align: left; /* Centraliza o título horizontalmente */
+  word-break: break-word;
+  text-align: left;
   margin-left: 140px;
 }
 
 .left-column p {
-  font-size: 20px; /* Tamanho da fonte do subtítulo */
+  font-size: 20px;
   color: #ffffff;
   margin-bottom: 50px;
-  text-align: left; /* Centraliza o subtítulo horizontalmente */
+  text-align: left;
   margin-left: 140px;
 }
 
 .header-icon img {
   margin-top: 30px;
   margin-bottom: 50px;
-  width: 240px; /* Tamanho da imagem do ícone */
-  margin-left: -220px;;
+  width: 240px;
+  margin-left: -220px;
 }
 
-
-/* imagem principal que tem o icone da relace*/
+/* Imagem principal que tem o ícone da relace */
 img {
   width: 50%;
   margin-left: -90px;
 }
 
-/* elementos da direita */
-
+/* Estilos para elementos da direita */
 .right-column {
+  margin-top: 120px;
   width: 50%;
   color: #ffffff;
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
 }
 
 .user-info {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .user-info span {
-  margin-right: 10px;
+  margin-right: 12px;
+  font-size: 22px;
+  margin-left: 6px;
 }
 
 .social-media {
   font-weight: bold;
 }
 
-/*elememto form */
+/* Elemento form */
 .header-card {
   background-color: #0086d0;
   padding: 50px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
   width: 500px;
-  display: inline-block; /* Coloca os cartões lado a lado */
+  display: inline-block;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 40px;
 }
-
 
 form h1 {
   font-size: 27px;
   font-weight: bold;
-  text-align: center; /* Centraliza o título horizontalmente */
+  text-align: center;
 }
 
 form h3 {
   font-size: 20px;
   font-weight: bold;
-  text-align: center; /* Centraliza o título horizontalmente */
+  text-align: center;
   margin-bottom: 35px;
 }
 
-/* elementos do botao e input do header */
+/* Elementos do botão e input do header */
 input {
   width: 100%;
   padding: 10px;
-  margin: 0 0px 20px 0;
+  margin: 0 0px 19px 0;
   border: none;
   border-radius: 5px;
   display: inline-block;
@@ -190,22 +191,28 @@ input {
   font-weight: bolder;
 }
 
-.header-check {
-  color: #000000;
+.checkbox-container {
+  display: flex;
+  align-items: center;
 }
 
-.label-termos{
+.input-checkbox {
+  width: 15px;
+  height: 20px;
+  margin-right: 4px;
+  margin-left: 70px;
+}
+
+.label-termos {
   font-size: 12px;
   color: #ffffff;
-  margin-bottom: 20px;
-  text-align: left;
-  margin-left: 10px;
+  margin-top: -12px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 label {
   display: inline-block;
-  width: 1;
-  text-align: left; /* Alinha o texto do label à direita */
   margin-top: 10px;
   margin-right: 10px;
   font-size: 80;
@@ -213,14 +220,14 @@ label {
 
 button {
   width: 100%;
-  padding: 20px;
+  padding: 12px;
   border: none;
   border-radius: 15px;
   display: inline-block;
   background-color: #148fd4;
   color: #ffffff;
   font-weight: bolder;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -228,7 +235,38 @@ button:hover {
   color: #bc63ff;
 }
 
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  header {
+      height: auto;
+      padding: 50px;
+  }
 
+  .left-column {
+      width: 100%;
+  }
+
+  .left-column h1 {
+      font-size: 40px;
+  }
+
+  .left-column p {
+      font-size: 16px;
+  }
+
+  .header-icon img {
+      margin-left: -20px;
+  }
+
+  .right-column {
+      width: 100%;
+      margin-top: 0;
+  }
+
+  .header-card {
+      width: 100%;
+  }
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
