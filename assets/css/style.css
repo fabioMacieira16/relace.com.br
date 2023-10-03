@@ -553,8 +553,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# section-icon - Por que escolher
-a Relaci?
+# section-icon - Por que escolher a Relaci?
 --------------------------------------------------------------*/
 /* Estilos para os icones */
 
@@ -1275,5 +1274,14 @@ ul li {
     to right,
     rgba(185, 94, 255, 1) 0%,
     rgba(87, 27, 116, 1) 100%
-  ) !important;
+  ) !important;  
 }
+
+.icon-footer {
+  width: 40%;
+  text-align: left;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-left: 90px;
+}
+
