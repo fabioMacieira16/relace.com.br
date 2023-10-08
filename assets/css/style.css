@@ -186,9 +186,11 @@ input {
   border: none;
   border-radius: 5px;
   display: inline-block;
-  background-color: #148fd4;
-  color: #ffffff;
   font-weight: bolder;
+}
+
+input placeholder {
+  color: #ffffff;
 }
 
 .checkbox-container {
@@ -222,7 +224,7 @@ button {
   width: 100%;
   padding: 12px;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #148fd4;
   color: #ffffff;
