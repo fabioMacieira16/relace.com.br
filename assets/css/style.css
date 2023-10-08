@@ -872,9 +872,9 @@ ul li {
 
 .img-extendida {
   height: 510px; /* Altura da imagem */
-  width: calc(80% - 80px);
+  width: 100%;
   border-radius: 10px; /* Arredondamento da borda */
-  margin-right: 290px; /* Distância entre a imagem e o texto */
+  width: 90%;
   margin-bottom: 10px;
 }
 
@@ -1033,7 +1033,7 @@ ul li {
 }
 
 .icon-footer {
-  width: 20%;
+  width: 150px ;
   text-align: left;
   margin-top: 70px;
   margin-bottom: 50px;  
