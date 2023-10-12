@@ -897,15 +897,12 @@ ul li {
   display: inline-block;
   padding: 20px 40px;
   background: #0086d0;
-  color: #fff;
-  text-decoration: none;
-  border: 0;
   border-radius: 5px;
   font-size: 18px;
-  box-shadow: none;
-  transition: background-color 0.3s, color 0.3s;
+  box-shadow: none;  
   margin-top: 20px;
-  text-align: left;
+  
+
 }
 
 .possibilidades-button:hover {
