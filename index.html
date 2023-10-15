@@ -26,6 +26,7 @@
       <link href="assets/css/style.css" rel="stylesheet">
       <script src="http://localhost:35729/livereload.js"></script>
    </head>
+
    <body>
       <!-- ======= Header ======= -->
       <header id="header" class="header">
@@ -53,7 +54,7 @@
                </a>
              </div>
              <div class="header-card">
-                 <form>
+                 <form id="myForm">
                      <h1 class="">Preencha o formulário</h1>
                      <h3>e fale com nosso consultor</h3>
                      <input type="text" placeholder="Nome completo*">
@@ -61,15 +62,15 @@
                      <input type="tel" placeholder="Qual seu telefone*">
                      <input type="text" placeholder="Qual o seu Cargo">
                      <input type="text" placeholder="Qual a sua empresa?">
-                     <input type="text" placeholder="4 + 11 + ?">
-                 </form>
-                 <div class="checkbox-container">
-                  <input type="checkbox" class="input-checkbox">
-                  <label class="label-termos">Eu concordo em receber comunicações.</label>
-               </div>
-                  <label class="label-termos">Ao informar meus dados, eu concordo com a<br>
-                     Política de Privacidade.</label>
-               <button>Falar com um consultor</button>
+                     <input type="text" id="expressionInput" placeholder="2 + 3 = ">                     
+                  </form>
+                  <div class="checkbox-container">
+                     <input type="checkbox" class="input-checkbox">
+                     <label class="label-termos">Eu concordo em receber comunicações.</label>
+                  </div>
+                  <label class="label-termos">Ao informar meus dados, eu concordo com a<br> Política de Privacidade.</label>
+
+                  <button id="calculateButton" disabled>Falar com um consultor</button>
              </div>
          </div>
      </header>  
@@ -171,6 +172,7 @@
       </section>
       <!-- End Why Us Section -->
       </br> </br>
+
       <!-- ======= Possibilidades Section ======= -->
       <section id="possibilidades" class="possibilidades">
          <div class="container">
@@ -201,6 +203,7 @@
             </div>
          </div>
       </section>
+
       <!-- ======= Depoimentos Section ======= -->
       <!-- <section id="testimonials" class="testimonials">
          <div class="container">
@@ -290,6 +293,7 @@
          </div>
       </section>
       <!-- End Testimonials Section -->
+
       <!-- ======= Services Section ======= -->
       <section id="services" class="services">
          <div class="container">
@@ -429,6 +433,7 @@
          </div>
       </section>
       <!-- End Services Section -->   
+
       <!-- ====== footer ====== "> -->
       <footer>
          <div class="container-footer px-xl-9 pt-1 ps-lg-5">
@@ -497,5 +502,6 @@
       <script src="assets/vendor/php-email-form/validate.js"></script>
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/form.js"></script>
    </body>
 </html>
