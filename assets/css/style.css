@@ -22,59 +22,6 @@ h6 {
   color: #f1f7fd;
 }
 
-#contato-instagram {
-  color: #f1f7fd;
-}
-
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: rgba(185, 94, 255, 1);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.datepicker-dropdown {
-  padding: 20px !important;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -104,7 +51,7 @@ header {
   margin: 20px 0;
   word-break: break-word;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 17%;
 }
 
 .left-column p {
@@ -112,7 +59,7 @@ header {
   color: #ffffff;
   margin-bottom: 50px;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 17%;
 }
 
 .header-icon img {
@@ -122,13 +69,11 @@ header {
   margin-left: -220px;
 }
 
-/* Imagem principal que tem o ícone da relace */
 .left-column img {
   width: 50%;
   margin-left: -90px;
 }
 
-/* Estilos para elementos da direita */
 .right-column {
   margin-top: 120px;
   width: 50%;
@@ -136,6 +81,7 @@ header {
   text-align: center;
 }
 
+/* Estilos para elementos da direita */
 .user-info {
   display: flex;
   align-items: center;
@@ -144,7 +90,7 @@ header {
 
 .user-info span {
   margin-right: 12px;
-  font-size: 22px;
+  font-size: 100%;
   margin-left: 6px;
 }
 
@@ -189,8 +135,8 @@ input {
   font-weight: bolder;
 }
 
-input placeholder {
-  color: #ffffff;
+::placeholder {
+  color: #000000;
 }
 
 .checkbox-container {
@@ -240,35 +186,47 @@ button:hover {
 /* Estilos para telas menores */
 @media (max-width: 768px) {
   header {
-      height: auto;
-      padding: 50px;
+    height: auto;
+    padding: 50px;
+    flex-direction: column; /* Altera para empilhar verticalmente em telas menores */
+    align-items: center;
   }
 
-  .left-column {
-      width: 100%;
+  .left-column, 
+  .right-column {
+    width: 100%; /* Largura total para ambos os lados */
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .left-column img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 2%;
   }
 
   .left-column h1 {
-      font-size: 40px;
+    margin-left: 0;
   }
 
   .left-column p {
-      font-size: 16px;
+    margin-left: 0;
   }
 
   .header-icon img {
-      margin-left: -20px;
-  }
-
-  .right-column {
-      width: 100%;
-      margin-top: 0;
+    margin-left: 0;
   }
 
   .header-card {
-      width: 100%;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    margin-left: 0;
   }
 }
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -333,7 +291,7 @@ section {
   width: 100%;
   text-align: left;
   margin: 20px 0;
-  margin-left: 18%;
+  margin-left: 10%;
 }
 
 .icone-section-title h1 {
@@ -344,7 +302,6 @@ section {
 
 .icon {
   text-align: center;
-  
   margin: 20px;
 }
 
@@ -357,17 +314,18 @@ section {
 .icon h2 {
   margin-top: 15px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   color: #AD63FD;
 }
 
 .icon p {
   font-size: 19px;
-  color: #999;
   margin-top: 5px;
   margin-bottom: 20%;
-  margin-left: 10px;
+  margin-left: 15%;
+  color: #999;
+  
 }
 
 @media (max-width: 768px) {
@@ -385,6 +343,14 @@ section {
     margin: 20px 0;
     text-align: center;
   }
+
+  .icon p {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+   } 
+
 }
 
 /*--------------------------------------------------------------
@@ -394,7 +360,7 @@ section {
 
 .card-section-title {
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -405,7 +371,7 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
-  margin-left: 18%;
+  margin-left: 10%;
 }
 
 .card-row {
@@ -416,7 +382,8 @@ section {
 }
 
 .card-recurso {
-  width: calc(33.33% - 20px);
+  /* width: calc(33.33% - 20px); */
+  width: 41%;
   margin: 0;
   padding: 20px;
   border-radius: 10px;
@@ -651,8 +618,9 @@ ul li {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# Testimonials - depoimentos dos clientes
 --------------------------------------------------------------*/
+#regin Testimonials
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -754,7 +722,7 @@ ul li {
     left: auto;
   }
 }
-
+#endregion
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -773,6 +741,11 @@ ul li {
   width: 150px ;
   text-align: left;
   margin-top: 70px;
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
+}
+
+
+#contato-instagram {
+  color: #f1f7fd;
 }
 
