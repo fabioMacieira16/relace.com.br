@@ -22,7 +22,6 @@ h6 {
   color: #f1f7fd;
 }
 
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -45,7 +44,7 @@ header {
 
 .left-column h1 {
   font-size: 60px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #3e006b;
   margin: 20px 0;
@@ -192,7 +191,7 @@ button:hover {
     align-items: center;
   }
 
-  .left-column, 
+  .left-column,
   .right-column {
     width: 100%; /* Largura total para ambos os lados */
     text-align: center;
@@ -316,7 +315,7 @@ section {
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #AD63FD;
+  color: #ad63fd;
 }
 
 .icon p {
@@ -325,7 +324,6 @@ section {
   margin-bottom: 20%;
   margin-left: 15%;
   color: #999;
-  
 }
 
 @media (max-width: 768px) {
@@ -337,6 +335,8 @@ section {
   .icone-section-title {
     width: 100%;
     margin: 20px 0;
+    margin-left: 0;
+    text-align: center;
   }
 
   .icon {
@@ -349,8 +349,7 @@ section {
     text-align: center;
     margin-left: 0;
     margin-bottom: 20px;
-   } 
-
+  }
 }
 
 /*--------------------------------------------------------------
@@ -607,7 +606,7 @@ ul li {
   background: #0086d0;
   border-radius: 5px;
   font-size: 18px;
-  box-shadow: none;  
+  box-shadow: none;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -620,7 +619,7 @@ ul li {
 /*--------------------------------------------------------------
 # Testimonials - depoimentos dos clientes
 --------------------------------------------------------------*/
-#regin Testimonials
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -722,7 +721,7 @@ ul li {
     left: auto;
   }
 }
-#endregion
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -734,18 +733,66 @@ ul li {
     to right,
     rgba(185, 94, 255, 1) 0%,
     rgba(87, 27, 116, 1) 100%
-  ) !important;  
+  ) !important;
 }
 
 .icon-footer {
-  width: 150px ;
+  width: 150px;
   text-align: left;
   margin-top: 70px;
   margin-bottom: 50px;
 }
 
-
 #contato-instagram {
   color: #f1f7fd;
 }
 
+@media (max-width: 768px) {
+  .container-footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .icon-footer {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .icon-footer img{
+  text-align: center;
+  margin-left: 10px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links ul {
+    padding-left: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  div {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
