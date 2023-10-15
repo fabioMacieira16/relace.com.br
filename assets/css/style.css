@@ -555,60 +555,76 @@ section {
 }
 
 /*--------------------------------------------------------------
-# section-icon - Por que escolher a Relaci?
+# Por que escolher a Relaci?
 --------------------------------------------------------------*/
 /* Estilos para os icones */
 
 .section-icon {
   display: flex;
   align-items: flex-start;
-  margin-left: 150px;
+  justify-content: center;
 }
 
 .icone-section-title {
-  width: 78%;
+  width: 100%;
   text-align: left;
-  margin: 0 auto;
+  margin: 20px 0;
+  margin-left: 18%;
 }
 
 .icone-section-title h1 {
   color: #590e89;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 .icon {
   text-align: center;
+  
+  margin: 20px;
 }
 
 .icon img {
-  margin-top: 30px;
   width: 100px;
   height: 100px;
+  margin-top: 20px;
 }
 
 .icon h2 {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
   color: #AD63FD;
-}
-
-.content .icon {
-  margin-right: 140px;
 }
 
 .icon p {
   font-size: 19px;
   color: #999;
   margin-top: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 20%;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .section-icon {
+    flex-direction: column; /* Altera para empilhar verticalmente em telas menores */
+    align-items: center;
+  }
+
+  .icone-section-title {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .icon {
+    margin: 20px 0;
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
-# Recursos
+# Descubra Nossos Recursos Poderosos
 --------------------------------------------------------------*/
 /* Selectiona o titulo do card a direita */
 
@@ -624,6 +640,8 @@ section {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
+  margin-left: 18%;
 }
 
 .card-row {
