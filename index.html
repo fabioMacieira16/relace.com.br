@@ -57,11 +57,11 @@
                  <form id="myForm">
                      <h1 class="">Preencha o formulário</h1>
                      <h3>e fale com nosso consultor</h3>
-                     <input type="text" placeholder="Nome completo*">
-                     <input type="email" placeholder="Email*">
-                     <input type="tel" placeholder="Qual seu telefone*">
-                     <input type="text" placeholder="Qual o seu Cargo">
-                     <input type="text" placeholder="Qual a sua empresa?">
+                     <input type="text" id="nome" placeholder="Nome completo*">
+                     <input type="email" id="email" placeholder="Email*">
+                     <input type="tel" id="telefone"  placeholder="Qual seu telefone*">
+                     <input type="text" id="cargo" placeholder="Qual o seu Cargo">
+                     <input type="text" id="empresa" placeholder="Qual a sua empresa?">
                      <input type="text" id="expressionInput" placeholder="2 + 3 = ">                     
                   </form>
                   <div class="checkbox-container">
@@ -70,7 +70,7 @@
                   </div>
                   <label class="label-termos">Ao informar meus dados, eu concordo com a<br> Política de Privacidade.</label>
 
-                  <button id="calculateButton" disabled>Falar com um consultor</button>
+                  <button type="button" onclick='enviarParaWhatsApp()'>Enviar para o WhatsApp</button>
              </div>
          </div>
      </header>  
