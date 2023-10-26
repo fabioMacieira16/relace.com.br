@@ -14,7 +14,7 @@ function calculateExpression() {
     const resultElement = document.getElementById('result');
 
     const expression = input.value;
-    
+
     if (isValidExpression(expression)) {
         try {
             const result = eval(expression);
@@ -35,7 +35,28 @@ expressionInput.addEventListener('input', () => {
 });
 
 // Vincular o evento de clique ao botão de cálculo
-const calculateButton = document.getElementById('calculateButton');
-calculateButton.addEventListener('click', calculateExpression);
+// const calculateButton = document.getElementById('calculateButton');
+// calculateButton.addEventListener('click', calculateExpression);
 
+function enviarParaWhatsApp() {
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var telefone = document.getElementById("telefone").value;
+    var cargo = document.getElementById("cargo").value;
+    var empresa = document.getElementById("empresa").value;
 
+    var mensagemWhatsApp  = "Olá, meu nome é " + nome +
+    " ,email " + email +
+    " ,telefone " + telefone +
+    " ,cargo " + cargo +
+    " ,empresa " + empresa +
+    " gostaria de saber mais sobre"
+    " minha empresa é a: "+ empresa +
+    " vim pelo site da relaci";
+
+    var linkWhatsApp = "https://wa.me/" + '+558599625972' + "?text=" + encodeURIComponent(mensagemWhatsApp);
+
+    window.open(linkWhatsApp, "_blank");
+
+    alert("Mensagem enviada com sucesso");
+}
