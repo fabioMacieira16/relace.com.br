@@ -27,7 +27,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Estilos para telas maiores */
 header {
-  background-image: url("/assets/img/header/sessão.svg");
+  background-image: url("../../assets/img/header/sessao.svg");
   background-size: cover;
   display: flex;
   justify-content: space-between;

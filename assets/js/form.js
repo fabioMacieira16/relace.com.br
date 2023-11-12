@@ -54,7 +54,7 @@ function enviarParaWhatsApp() {
     " minha empresa é a: "+ empresa +
     " vim pelo site da relaci";
 
-    var linkWhatsApp = "https://wa.me/" + '+558599625972' + "?text=" + encodeURIComponent(mensagemWhatsApp);
+    var linkWhatsApp = "https://wa.me/" + '+558592545342' + "?text=" + encodeURIComponent(mensagemWhatsApp);
 
     window.open(linkWhatsApp, "_blank");
 
