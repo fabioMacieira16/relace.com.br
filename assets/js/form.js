@@ -1,69 +1,69 @@
 class FormSubmit {
-    constructor(setting) {
-        this.setting = setting;
-        this.form = document.getElementById(setting.form);
-        this.FormSubmit = document.querySelector(setting.button);
-
-        if (this.form) {
-            this.url = this.form.getAttribute('action');
-        }
-        this.sendForm = this.sendForm.bind(this);
+    constructor(settings) {
+      this.settings = settings;
+      this.form = document.querySelector(settings.form);
+      this.formButton = document.querySelector(settings.button);
+      if (this.form) {
+        this.url = this.form.getAttribute("action");
+      }
+      this.sendForm = this.sendForm.bind(this);
     }
-
+  
     displaySuccess() {
-        this.form.innerHTML = this.settings.success;
+      this.form.innerHTML = this.settings.success;
     }
-
-    disabledError() {
-        this.form.innerHTML = this.settings.error;
+  
+    displayError() {
+      this.form.innerHTML = this.settings.error;
     }
-
+  
     getFormObject() {
-        const frmObjet = {};
-        const fields = this.querySelectorAll('[name]');
-        fields.forEach((field) => {
-            formObjet[field.getAttribute('name')] = field.value;
-        });
-        return formObjet;
+      const formObject = {};
+      const fields = this.form.querySelectorAll("[name]");
+      fields.forEach((field) => {
+        formObject[field.getAttribute("name")] = field.value;
+      });
+      console.log("#objeto",formObject);
+      return formObject;
     }
-
+  
     onSubmission(event) {
-        event.preventDefault();
-        event.target.disabled = true;
-        event.target.innerHTML = 'Enviando...';
+      event.preventDefault();
+      event.target.disabled = true;
+      event.target.innerText = "Enviando...";
     }
-
+  
     async sendForm(event) {
-        try {
-            this.onSubmission(event);
-            await fetch(this.url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    Accept: 'application/json',
-                },
-                body: JSON.stringify(this.getFormObject()), 
-            });
-            this.displaySuccess();
-        } catch (error) {
-            console.log(this.disabledError() , error);
-        }
+      try {
+        this.onSubmission(event);
+        await fetch(this.url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(this.getFormObject()),
+        });
+        this.displaySuccess();
+      } catch (error) {
+        this.displayError();
+        throw new Error(error);
+      }
     }
-
+  
     init() {
-        if (this.form) this.FormSubmit.addEventListener('click', this.sendForms(e));
-        return this;
+      if (this.form) this.formButton.addEventListener("click", this.sendForm);
+      return this;
     }
-}
-
-const formSubmit = new FormSubmit({
+  }
+  
+  const formSubmit = new FormSubmit({
     form: "[data-form]",
     button: "[data-button]",
-    success: console.log("Mensagem enviada com sucesso"),
-    error: console.log("Erro ao enviar mensagem")
-});
-
-formSubmit.init();
+    success: "<h1 class='success'>Mensagem enviada!</h1>",
+    error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+  });
+  formSubmit.init();
 
 // Função para verificar se a expressão é válida
 // function isValidExpression(expression) {

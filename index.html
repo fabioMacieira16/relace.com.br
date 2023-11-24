@@ -60,23 +60,27 @@
                </a>
              </div>
              <div class="header-card">
-                 <form id="myForm">
+                <form id="myForm" 
+                      action="https://api.staticforms.xyz/submit" method="POST" data-Form >
+                     <input type="hidden" name="accessKey" value="9a1a0d86-cfb6-4a7b-804f-01a6e81d894e">
                      <h1 class="">Preencha o formulário</h1>
                      <h3>e fale com nosso consultor</h3>
-                     <input type="text" id="nome" placeholder="Nome completo*">
-                     <input type="email" id="email" placeholder="Email*">
-                     <input type="tel" id="telefone"  placeholder="Qual seu telefone*">
-                     <input type="text" id="cargo" placeholder="Qual o seu Cargo">
-                     <input type="text" id="empresa" placeholder="Qual a sua empresa?">
-                     <input type="text" id="expressionInput" placeholder="2 + 3 = ">                     
-                  </form>
+                        <input type="text" name="name" placeholder="Nome completo*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <input type="text" name="phone" placeholder="Qual seu telefone*" required>
+                        <input type="text" name="$cargo" placeholder="Qual o seu Cargo" required>
+                        <input type="text" name="$empresa" placeholder="Qual a sua empresa?" required>
+                        <input type="text" placeholder="2 + 3 = " required>                    
+                  </form> 
+
                   <div class="checkbox-container">
-                     <input type="checkbox" class="input-checkbox">
+                     <input type="checkbox" class="input-checkbox" required>
                      <label class="label-termos">Eu concordo em receber comunicações.</label>
                   </div>
                   <label class="label-termos">Ao informar meus dados, eu concordo com a<br> Política de Privacidade.</label>
 
-                  <button type="button" onclick='enviarParaWhatsApp()'>Enviar para o WhatsApp</button>
+                  <button type="submit" class="btnEnviarEmail" data-button >Enviar para o Email</button>
+                  <!-- <button type="button" onclick='enviarParaWhatsApp()'>Enviar para o WhatsApp</button> -->
              </div>
          </div>
      </header>  
@@ -156,7 +160,7 @@
          <div class="card-row">
             <div class="card-recurso special-card">
                <div class="card-recurso-interno">
-                  <img src="assets/img/recursos/Robô.svg" alt="Chatbots">
+                  <img src="assets/img/recursos/robo.svg" alt="Chatbots">
                </div>
                <div class="card-description">
                   <h1>Inteligência Artificial \ Chatbots:</h1>
@@ -508,6 +512,6 @@
       <script src="assets/vendor/php-email-form/validate.js"></script>
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
-      <script src="assets/js/form.js"></script>
+      <script src="/assets/js/form.js"></script>
    </body>
 </html>
