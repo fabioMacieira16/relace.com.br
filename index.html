@@ -24,7 +24,15 @@
       <meta name='author' content='MACCODE | Fábio Macieira' />
       <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
-      <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+      <script src="https://unpkg.com/imask"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           var phoneInput = document.getElementById('phone');
+           var phoneMask = IMask(phoneInput, {
+             mask: '(00)9 0000-0000'
+           });
+         });
+      </script>
    </head>
 
    <body>
@@ -61,30 +69,34 @@
              </div>
              <div class="header-card">
                 <form id="myForm" 
-                      action="https://api.staticforms.xyz/submit" method="POST" data-Form >
-                     <input type="hidden" name="accessKey" value="9a1a0d86-cfb6-4a7b-804f-01a6e81d894e">
+                      <!-- action="https://api.staticforms.xyz/submit" method="POST" data-Form > -->
+                      <!-- dev -->
+                      <!-- <input type="hidden" name="accessKey" value="9a1a0d86-cfb6-4a7b-804f-01a6e81d894e"> -->
+
+                      <!-- producao -->
+                     <input type="hidden" name="accessKey" value="0951a8bb-69ab-4236-b52a-ced86596350d">
                      <h1 class="">Preencha o formulário</h1>
                      <h3>e fale com nosso consultor</h3>
                         <input type="text" name="name" placeholder="Nome completo*" required>
                         <input type="email" name="email" placeholder="Email*" required>
-                        <input type="text" name="phone" placeholder="Qual seu telefone*" required>
+                        <input type="text" name="phone" id="phone" placeholder="(XX)9 XXXX-XXXX" required>
                         <input type="text" name="$cargo" placeholder="Qual o seu Cargo" required>
                         <input type="text" name="$empresa" placeholder="Qual a sua empresa?" required>
-                        <input type="text" placeholder="2 + 3 = " required>                    
-                  </form> 
-
-                  <div class="checkbox-container">
-                     <input type="checkbox" class="input-checkbox" required>
-                     <label class="label-termos">Eu concordo em receber comunicações.</label>
-                  </div>
-                  <label class="label-termos">Ao informar meus dados, eu concordo com a<br> Política de Privacidade.</label>
-
-                  <button type="submit" class="btnEnviarEmail" data-button >Enviar para o Email</button>
-                  <!-- <button type="button" onclick='enviarParaWhatsApp()'>Enviar para o WhatsApp</button> -->
+                        <input type="text" name="calcular" placeholder="2 + 3 = " required>                    
+                        
+                        <div class="checkbox-container">
+                           <input type="checkbox" class="input-checkbox" id="aceitoTermos" required>
+                           <label class="label-termos">Eu concordo em receber comunicações.</label>
+                        </div>
+                        <label class="label-termos">Ao informar meus dados, eu concordo com a<br> Política de Privacidade.</label>
+                        
+                        <button type="submit" class="btnEnviarEmail" data-button >Enviar para o Email</button>
+                        <!-- <button type="button" onclick='enviarParaWhatsApp()'>Enviar para o WhatsApp</button> -->
+                     </form> 
              </div>
          </div>
      </header>  
-
+     F@b!0#753951$%
     <!-- End Header -->
 
       <!-- ======= porque? - Section ======= -->
