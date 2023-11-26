@@ -105,8 +105,6 @@ class FormSubmit {
   ////#endregion
 }
 
-
-
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
